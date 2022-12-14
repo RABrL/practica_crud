@@ -44,10 +44,6 @@
             <tr>
                 <td class='col col-2'><?= $date['id'] ?></td>
                 <td class='col col-8'><?= $date['nombre'] ?></td>
-                <td class='col-2'>
-                    <button class="btn btn-primary" name='<?= $date['id'] ?>'>Editar</button>
-                    <button class="btn btn-danger">Eliminar</button>
-                </td>
             </tr>
         </tbody>
     </table>

@@ -1,5 +1,5 @@
 <?php 
-   require_once('../head/head.php');
+   require_once('/var/www/html/coex/practica_crud/view/head/head.php');
 ?>
 
 <form action="store.php" method="POST" autocomplete="off">
@@ -13,5 +13,5 @@
 </form>
 
 <?php 
-   require_once('../head/footer.php');
+   require_once('/var/www/html/coex/practica_crud/view/head/footer.php');
 ?>
