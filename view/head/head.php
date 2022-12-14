@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title><?php 
+        echo (empty($_GET["id"])) 
+        ? ((strpos($_SERVER["REQUEST_URI"],'create')) ? 'Crear nuevo usuario': 'Inicio')//strpos mira si el segundo parametro existe en el string del primero, si no existe devuelve false y si existe devuelve la posicion desde donde lo encuentra
+        : ((strpos($_SERVER["REQUEST_URI"],'show')) ? 'Detalles del registro '.$_GET["id"]  : 'Actualizar Registro '.$_GET["id"]);
+    ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <header>
